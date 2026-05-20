@@ -2,30 +2,34 @@
     font-family: 'norse';
     src: url('./Assets/Fonts/Norse.otf') format('opentype');
     font-weight: 400;
-    foint-style: normal;
+    font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'norse';
-    src: url('./Assets/Fonts/Norsebold.otf') format ('opentype');
+    src: url('./Assets/Fonts/Norsebold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display:swap;
 }
 
-html body {
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
-    box-sizing: border-box;
     height: 100dvh;
-    background-color:floralwhite;
+    background-color: whitesmoke;
+    font-family: sans-serif;
 }
 
+.italic {
+    font-style:italic;
+}
 .container {
     display:flex;
 }
@@ -36,14 +40,58 @@ body {
     background-size: cover;
 }
 
+#banner {
+    justify-content: center;
+    align-items: center;
+    font-family: 'norse',sans-serif;
+    container-type: size;
+    
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    position: relative;
+    top: 20%;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+#banner > div {
+    font-size: 80cqb;
+}
+
+#banner > img {
+    height:100%;
+}
+
 #content {
     padding:40px;
     flex: 1;
+    flex-direction:column;
 }
 #title {
-    height: 40%;
+    flex: 0 0 40%;
     flex-direction:column;
     justify-content: center;
     align-items: flex-start;
     gap:0px;
+    font-size:1.25rem;
+    font-weight: 700;
+}
+
+#form {
+    flex: 0 0 30%;
+    display:grid;
+
+}
+
+label {
+    font-family: sans-serif;
+    display: block;
+    text-transform: uppercase;
+}
+
+#cta {
+    flex:1;
 }
