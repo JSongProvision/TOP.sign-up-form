@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="side-bar" class="container">
@@ -21,23 +24,38 @@
             <p>You <span class="italic">know</span> you want to</p>
         </div>
         <div id="form" class="container">
-
+            <p id="form-title">Let's do this!</p>
+            <form action="javascript:alert('Form tested successfully!');">
+                <label for="first_name">
+                    First Name
+                    <input type="text" id="first_name" name="first_name"/>
+                </label>
+                <label for="last_name">
+                    Last Name
+                    <input type="text" id="last_name" name="last_name"/>
+                </label>              
+                <label for="email">
+                    Email
+                    <input type="email" id="email" name="email"/>
+                </label>
+                <label for="phone_number">
+                    Phone Number
+                    <input type="tel" id="phone_number" name="phone_number"/>
+                </label> 
+                <label for="password">
+                    Password
+                    <input type="password" id="password" name="password"/>
+                </label>  
+                <label for="confirm_password">
+                    Confirm Password
+                    <input type="password" id="confirm_password" name="confirm_password"/>
+                </label>
+                
+            </form>
         </div>
         <div id="cta" class="container">
-            <form action="javascript:alert('Form tested successfully!');">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name"/>
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name"/>
-                <label for="email">Email</label>
-                <input type="text" id="first_name"name="first_name"/>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name"/>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name"/>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name"/>
-            </form>
+            <button>Create Account</button>
+            <p>Already have an account?<span><a href="https://google.com"></a></span></p>
         </div>
     </div>
 </body>

@@ -66,11 +66,11 @@ body {
 }
 
 #content {
-    padding:40px;
     flex: 1;
     flex-direction:column;
 }
 #title {
+    padding:40px;
     flex: 0 0 40%;
     flex-direction:column;
     justify-content: center;
@@ -82,14 +82,55 @@ body {
 
 #form {
     flex: 0 0 30%;
-    display:grid;
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:white;
+    padding:40px;
+    box-shadow: rgba(0, 0, 0, 0.5);
 }
 
+
+form {
+    width: 50%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content:start;
+    justify-items: start;
+    row-gap: 20px;
+    column-gap: 40px;
+    
+}
+
+#form-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
 label {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .6rem;
+    color: rgb(20,20,20);
     display: block;
     text-transform: uppercase;
+}
+
+input {
+    display: block;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    padding: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.15);
+    outline: blue;
 }
 
 #cta {
